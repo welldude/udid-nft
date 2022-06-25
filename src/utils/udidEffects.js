@@ -9,7 +9,7 @@ export const useUdidEffect = (index, nodeP, nodeC, icon) => {
 
 export const encry = (address) => {
   let front, end
-  if (address != null && address > 6) {
+  if (address !== null && address > 6) {
     front = address.substring(0, 4)
     end = address.substring(address.length - 4)
   }

@@ -1,8 +1,10 @@
-import { createStore } from "vuex";
-
+import { createStore } from 'vuex'
+import dapp from './modules/dapp'
+import getters from './getters'
 export default createStore({
   state: {},
   mutations: {},
   actions: {},
-  modules: {},
-});
+  getters,
+  modules: { dapp }
+})
